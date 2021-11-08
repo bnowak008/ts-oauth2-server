@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Repository Interfaces | @jmondi/oauth2-server</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="A standards compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript. ">
+    
+    <link rel="preload" href="/ts-oauth2-server/assets/css/0.styles.ace02c17.css" as="style"><link rel="preload" href="/ts-oauth2-server/assets/js/app.43f3cd95.js" as="script"><link rel="preload" href="/ts-oauth2-server/assets/js/2.eeb228d0.js" as="script"><link rel="preload" href="/ts-oauth2-server/assets/js/18.b1184797.js" as="script"><link rel="prefetch" href="/ts-oauth2-server/assets/js/10.8006e110.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/11.0dccd8a1.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/12.f170c7a2.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/13.5dea15c7.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/14.2027debb.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/15.af20fa08.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/16.c3510250.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/17.8342024f.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/19.3ae9f5b8.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/20.a094a67d.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/3.f1044b1b.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/4.2025cade.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/5.9e3e377e.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/6.59a9b290.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/7.2d4f4db5.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/8.9a829feb.js"><link rel="prefetch" href="/ts-oauth2-server/assets/js/9.fc013a56.js">
+    <link rel="stylesheet" href="/ts-oauth2-server/assets/css/0.styles.ace02c17.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ts-oauth2-server/" class="home-link router-link-active"><!----> <span class="site-name">@jmondi/oauth2-server</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/jasonraimondi/ts-oauth2-server" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/ts-oauth2-server/getting_started/" class="nav-link">
+  Getting Started
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/jasonraimondi/ts-oauth2-server" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/ts-oauth2-server/getting_started/" class="nav-link">
+  Getting Started
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/ts-oauth2-server/" aria-current="page" class="sidebar-link">TypeScript OAuth2.0 Server</a></li><li><a href="/ts-oauth2-server/getting_started/" class="sidebar-link">Getting Started</a></li><li><section class="sidebar-group depth-0"><a href="/ts-oauth2-server/grants/" class="sidebar-heading clickable"><span>Grants</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/ts-oauth2-server/grants/client_credentials.html" class="sidebar-link">Client Credentials Grant</a></li><li><a href="/ts-oauth2-server/grants/authorization_code.html" class="sidebar-link">Authorization Code Grant (w/ PKCE)</a></li><li><a href="/ts-oauth2-server/grants/refresh_token.html" class="sidebar-link">Refresh Token Grant</a></li><li><a href="/ts-oauth2-server/grants/password.html" class="sidebar-link">Password Grant</a></li><li><a href="/ts-oauth2-server/grants/implicit.html" class="sidebar-link">Implicit Grant</a></li></ul></section></li><li><a href="/ts-oauth2-server/repositories/" aria-current="page" class="active sidebar-link">Repository Interfaces</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ts-oauth2-server/repositories/#auth-code-repository" class="sidebar-link">Auth Code Repository</a></li><li class="sidebar-sub-header"><a href="/ts-oauth2-server/repositories/#client-repository" class="sidebar-link">Client Repository</a></li><li class="sidebar-sub-header"><a href="/ts-oauth2-server/repositories/#scope-repository" class="sidebar-link">Scope Repository</a></li><li class="sidebar-sub-header"><a href="/ts-oauth2-server/repositories/#token-repository" class="sidebar-link">Token Repository</a></li><li class="sidebar-sub-header"><a href="/ts-oauth2-server/repositories/#user-repository" class="sidebar-link">User Repository</a></li></ul></li><li><a href="/ts-oauth2-server/entities/" class="sidebar-link">Entity Interfaces</a></li><li><a href="/ts-oauth2-server/adapters/" class="sidebar-link">Adapters</a></li><li><a href="/ts-oauth2-server/glossary/" class="sidebar-link">Glossary</a></li><li><a href="/ts-oauth2-server/sources/" class="sidebar-link">Sources</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="repository-interfaces"><a href="#repository-interfaces" class="header-anchor">#</a> Repository Interfaces</h1> <h2 id="auth-code-repository"><a href="#auth-code-repository" class="header-anchor">#</a> Auth Code Repository</h2> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">OAuthAuthCodeRepository</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">// Fetch auth code entity from storage by code</span>
+  <span class="token function">getByIdentifier</span><span class="token punctuation">(</span>authCodeCode<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span>OAuthAuthCode<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// An async call that should return an OAuthAuthCode that has not been </span>
+  <span class="token comment">// persisted to storage yet.</span>
+  <span class="token function">issueAuthCode</span><span class="token punctuation">(</span>
+    client<span class="token operator">:</span> OAuthClient<span class="token punctuation">,</span> 
+    user<span class="token operator">:</span> OAuthUser <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> 
+    scopes<span class="token operator">:</span> OAuthScope<span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">)</span><span class="token operator">:</span> OAuthAuthCode <span class="token operator">|</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span>OAuthAuthCode<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// An async call that should persist an OAuthToken into your storage. </span>
+  <span class="token function">persist</span><span class="token punctuation">(</span>authCode<span class="token operator">:</span> OAuthAuthCode<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token keyword">void</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// This async method is called when an auth code is validated by the </span>
+  <span class="token comment">// authorization server. Return `true` if the auth code has been </span>
+  <span class="token comment">// manually revoked. If the code is still valid return `false`</span>
+  <span class="token function">isRevoked</span><span class="token punctuation">(</span>authCodeCode<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">boolean</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+  <span class="token function">revoke</span><span class="token punctuation">(</span>authCodeCode<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token keyword">void</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="client-repository"><a href="#client-repository" class="header-anchor">#</a> Client Repository</h2> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">OAuthClientRepository</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Fetch client entity from storage by client_id</span>
+  <span class="token function">getByIdentifier</span><span class="token punctuation">(</span>clientId<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span>OAuthClient<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// check the grant type and secret against the client</span>
+  <span class="token function">isClientValid</span><span class="token punctuation">(</span>
+    grantType<span class="token operator">:</span> GrantIdentifier<span class="token punctuation">,</span> 
+    client<span class="token operator">:</span> OAuthClient<span class="token punctuation">,</span> 
+    clientSecret<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span>
+  <span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">boolean</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="scope-repository"><a href="#scope-repository" class="header-anchor">#</a> Scope Repository</h2> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">OAuthScopeRepository</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Find all scopes by scope names</span>
+  <span class="token function">getAllByIdentifiers</span><span class="token punctuation">(</span>scopeNames<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span>OAuthScope<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Scopes have already been validated against the client, if you arent </span>
+  <span class="token comment">// doing anything fancy with scopes, you can just `return scopes`,</span>
+  <span class="token comment">// Otherwise, now is your chance to add or remove any final scopes </span>
+  <span class="token comment">// after they have already been validated against the client scopes</span>
+  <span class="token function">finalize</span><span class="token punctuation">(</span>
+    scopes<span class="token operator">:</span> OAuthScope<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    identifier<span class="token operator">:</span> GrantIdentifier<span class="token punctuation">,</span>
+    client<span class="token operator">:</span> OAuthClient<span class="token punctuation">,</span>
+    user_id<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span>OAuthScope<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="token-repository"><a href="#token-repository" class="header-anchor">#</a> Token Repository</h2> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">OAuthTokenRepository</span> <span class="token punctuation">{</span>
+  <span class="token comment">// An async call that should return an OAuthToken that has not been </span>
+  <span class="token comment">// persisted to storage yet.</span>
+  <span class="token function">issueToken</span><span class="token punctuation">(</span>
+    client<span class="token operator">:</span> OAuthClient<span class="token punctuation">,</span> 
+    scopes<span class="token operator">:</span> OAuthScope<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 
+    user<span class="token operator">?</span><span class="token operator">:</span> OAuthUser
+  <span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span>OAuthToken<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+  <span class="token function">issueRefreshToken</span><span class="token punctuation">(</span>accessToken<span class="token operator">:</span> OAuthToken<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span>OAuthToken<span class="token operator">&gt;</span>
+
+  <span class="token comment">// An async call that should persist an OAuthToken into your storage. </span>
+  <span class="token function">persist</span><span class="token punctuation">(</span>accessToken<span class="token operator">:</span> OAuthToken<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token keyword">void</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// This async method is called when a refresh token is used to reissue </span>
+  <span class="token comment">// an access token. The original access token is revoked a new access </span>
+  <span class="token comment">// token is issued.</span>
+  <span class="token function">revoke</span><span class="token punctuation">(</span>accessTokenToken<span class="token operator">:</span> OAuthToken<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token keyword">void</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// This async method is called when an access token is validated by the </span>
+  <span class="token comment">// authorization server. Return `true` if the access token has been </span>
+  <span class="token comment">// manually revoked. If the token is still valid return `false`</span>
+  <span class="token function">isRefreshTokenRevoked</span><span class="token punctuation">(</span>refreshToken<span class="token operator">:</span> OAuthToken<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">boolean</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Fetch refresh token entity from storage by refresh token</span>
+  <span class="token function">getByRefreshToken</span><span class="token punctuation">(</span>refreshTokenToken<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span>OAuthToken<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="user-repository"><a href="#user-repository" class="header-anchor">#</a> User Repository</h2> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">interface</span> <span class="token class-name">OAuthUserRepository</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">// Fetch user entity from storage by identifier. A provided password may </span>
+  <span class="token comment">// be used to validate the users credentials. Grant type and client are provided</span>
+  <span class="token comment">// for additional checks if desired</span>
+  <span class="token function">getUserByCredentials</span><span class="token punctuation">(</span>
+    identifier<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+    password<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+    grantType<span class="token operator">?</span><span class="token operator">:</span> GrantIdentifier<span class="token punctuation">,</span>
+    client<span class="token operator">?</span><span class="token operator">:</span> OAuthClient<span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span>OAuthUser <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ts-oauth2-server/grants/implicit.html" class="prev">
+        Implicit Grant
+      </a></span> <span class="next"><a href="/ts-oauth2-server/entities/">
+        Entity Interfaces
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/ts-oauth2-server/assets/js/app.43f3cd95.js" defer></script><script src="/ts-oauth2-server/assets/js/2.eeb228d0.js" defer></script><script src="/ts-oauth2-server/assets/js/18.b1184797.js" defer></script>
+  </body>
+</html>
